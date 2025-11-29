@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 const title = 'Akram Zennad | Full Stack & AI Developer From Constantine, Algeria.';
 const description =
   'Full stack and mobile developer (Flutter, React.js, Django REST, AI Agents) building modern apps for web and mobile, based in Constantine, Algeria.';
-const url = 'https://sagarshah.dev';
+const url = 'https://akramzennad.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
