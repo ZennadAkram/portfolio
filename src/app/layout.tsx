@@ -5,13 +5,13 @@ import { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
-import Footer from '@/components/layout/footer';
+//import Footer from '@/components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
+const title = 'Akram Zennad | Full Stack & AI Developer From Constantine, Algeria.';
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
+  'Full stack and mobile developer (Flutter, React.js, Django REST, AI Agents) building modern apps for web and mobile, based in Constantine, Algeria.';
 const url = 'https://sagarshah.dev';
 
 export const metadata: Metadata = {
@@ -19,12 +19,17 @@ export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    'Frontend Developer',
+    'Frontend Develope',
     'Full Stack Developer',
     'React Developer',
-    'Next.js Developer',
+    'Flutter Developer',
+    'Python Developer',
+    'Javascript Developer',
+    'Typescript Developer',
+    'Django Rest Framework Developer',
+    'AI agents Developer'
   ],
-  creator: 'Sagar Shah',
+  creator: 'Akram Zennad',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -37,22 +42,25 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-sagar.png',
+        url: '/images/06.png',
       },
     ],
   },
-  twitter: {
+ /* twitter: {
     card: 'summary_large_image',
     title,
     description,
     creator: '@shahsagarm',
     images: '/images/open-graph-sagar.png',
   },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
+  */
+ /* icons: {
+    icon: '/az-icon.png',
+    
     apple: '/apple-touch-icon.png',
   },
+  */
+  
 };
 
 const googleAnalyticsId = process.env.GOOGLE_ANALYTICS_ID;
@@ -85,7 +93,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>
-          <Footer />
+         {/* <Footer /> */}
         </Providers>
       </body>
     </html>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import SagarFullPose from '/public/images/sagar-full-pose.jpg';
+import AkramFullPose from '/public/images/akram-pose.jpg';
 import Tag from '@/components/data-display/tag';
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
@@ -19,7 +19,7 @@ const AboutMeSection = () => {
         <div className="flex justify-center md:order-first md:justify-end">
           <div className="relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]">
             <Image
-              src={SagarFullPose}
+              src={AkramFullPose}
               alt="Fullpose of Sagar"
               className="absolute z-10 h-[360px] w-[280px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
               style={{ objectFit: 'cover' }}
@@ -34,28 +34,11 @@ const AboutMeSection = () => {
             Curious about me? Here you have it:
           </Typography>
           <Typography>
-            I&apos;m a passionate,{' '}
-            <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.FIGMA}
-            >
-              self-proclaimed designer
-            </Link>{' '}
-            who specializes in full stack development (React.js & Node.js). I am
-            enthusiastic about bringing the technical and visual aspects of
-            digital products to life. User experience, pixel perfect design, and
-            writing clear, readable, highly performant code matters to me.
+            I’m a passionate self-taught developer specializing in Flutter, React, and Django REST Framework, focused on building scalable, high-performance, and user-friendly applications. I enjoy bringing digital products to life with clean architecture, smooth experiences, and efficient, maintainable code. I also build and integrate AI agents into projects, adding intelligent features like smart chatbots, automated support, and product recommendations.
           </Typography>
           <Typography>
-            I began my journey as a web developer in 2015, and since then,
-            I&apos;ve continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. Now,
-            in my early thirties, 7 years after starting my web development
-            journey, I&apos;m building cutting-edge web applications using
-            modern technologies such as Next.js, TypeScript, Nestjs,
-            Tailwindcss, Supabase and much more.
+           I began my journey
+            as a developer in 2023, and since then, I’ve continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early twenties, a couple of years after starting my development journey, I’m building cutting-edge applications using modern technologies such as Flutter, React, Django REST Framework, TailwindCSS, Firebase, AI agents, and much more.
           </Typography>
           <Typography>
             I am very much a progressive thinker and enjoy working on products
@@ -63,16 +46,16 @@ const AboutMeSection = () => {
           </Typography>
           <Typography>
             When I&apos;m not in full-on developer mode, you can find me
-            hovering around on twitter or on indie hacker, witnessing the
+            hovering around on LinkedIn and Insatgram, witnessing the
             journey of early startups or enjoying some free time. You can follow
             me on{' '}
             <Link
               noCustomization
               externalLink
               withUnderline
-              href={EXTERNAL_LINKS.TWITTER}
+              href={EXTERNAL_LINKS.LinkedIn}
             >
-              Twitter
+              LinkedIn
             </Link>{' '}
             where I share tech-related bites and build in public, or you can
             follow me on{' '}
@@ -90,7 +73,7 @@ const AboutMeSection = () => {
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
               <Typography component="li">
-                B.E. in Computer Engineering
+                B.E. in Software Engineering
               </Typography>
               <Typography component="li">Full time freelancer</Typography>
             </ul>

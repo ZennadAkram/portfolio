@@ -1,23 +1,20 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github,Linkedin } from 'lucide-react';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
+import LogoFlutter from '/public/images/logos/icon-flutter.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
-import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
-import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
+import LogoDart from '/public/images/logos/icon-dart.svg';
+import LogoPython from '/public/images/logos/icon-python.svg';
+import LogoDjango from '/public/images/logos/icon-django-rest.svg';
+import LogoDeepseek from '/public/images/logos/icon-deepseek.svg';
+import LogoFirebase from '/public/images/logos/icon-firebase.svg';
+import LogoJava from '/public/images/logos/icon-java.svg';
+import LogoMysql from '/public/images/logos/icon-mysql.svg';
+import LogoSmolagents from '/public/images/logos/icon-smolagents.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoCypress from '/public/images/logos/icon-cypress.svg';
-import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 
 import LogoUpwork from '/public/images/logos/logo-upwork.svg';
@@ -25,11 +22,9 @@ import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
 import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
 import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
 import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
-
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
-
+import ProjectCharacterAI from '/public/images/project-character-ai.png';
+import ProjectAlearning from '/public/images/project-alearning.png';
+import ProjectTechstore from '/public/images/tech-store-new.png';
 import AvatarKrisztian from '/public/images/avatar-krisztian.png';
 import AvatarEugen from '/public/images/avatar-eugen.png';
 import AvatarDummy from '/public/images/avatar-dummy.svg';
@@ -42,9 +37,10 @@ import {
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
-  GITHUB: 'https://github.com/shahsagarm',
+  GITHUB: 'https://github.com/ZennadAkram',
   GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
   TWITTER: 'https://twitter.com/shahsagarm',
+  LinkedIn: 'https://www.linkedin.com/in/akram-zennad-201027378/',
   FIGMA: 'https://www.figma.com/@shahsagarm',
   FIGMA_FILE:
     'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
@@ -59,10 +55,11 @@ export const NAV_LINKS = [
     label: 'Work',
     href: '#work',
   },
-  {
+  /*{
     label: 'Testimonials',
     href: '#testimonials',
   },
+  */
   {
     label: 'Contact',
     href: '#contact',
@@ -72,19 +69,25 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   {
     icon: Github,
-    url: 'https://github.com/shahsagarm',
+    url: 'https://github.com/ZennadAkram',
   },
+  
   {
-    icon: Twitter,
-    url: 'https://twitter.com/shahsagarm',
-  },
-  {
-    icon: Figma,
-    url: 'https://www.figma.com/@shahsagarm',
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/akram-zennad-201027378/',
   },
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
+  {
+    label: 'Dart',
+    logo: LogoDart,
+    url: 'https://dart.dev/',
+  },
+  {    label: 'Python',
+    logo: LogoPython,
+    url: 'https://www.python.org/',
+  },
   {
     label: 'Javascript',
     logo: LogoJavascript,
@@ -95,74 +98,67 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoTypescript,
     url: 'https://www.typescriptlang.org/',
   },
+  
+  
+  {
+    label:'Java',
+    logo:LogoJava,
+    url:'https://www.java.com/',
+  },
+  {
+    label: 'Flutter',
+    logo: LogoFlutter,
+    url:'https://flutter.dev/', 
+  },
+
   {
     label: 'React',
     logo: LogoReact,
     url: 'https://react.dev/',
   },
+ 
   {
-    label: 'Next.js',
-    logo: LogoNextjs,
-    url: 'https://nextjs.org/',
+    label: 'Django',
+    logo: LogoDjango,
+    url: 'https://www.django-rest-framework.org/',
+  },
+   {
+    label: 'Tailwindcss',
+    logo: LogoTailwindcss,
+    url: 'https://tailwindcss.com/',
+  },
+  
+  {
+    label: 'Smolagents',
+    logo: LogoSmolagents,
+    url: 'https://huggingface.co/docs/smolagents/',
+  },
+  {    label: 'Deepseek API',
+    logo: LogoDeepseek,
+    url: 'https://deepseek.ai/',
+  },
+  {    label: 'Firebase',
+    logo: LogoFirebase,
+    url: 'https://firebase.google.com/',
   },
   {
-    label: 'Node.js',
-    logo: LogoNodejs,
-    url: 'https://nodejs.org/en',
+    label: 'MySQL',
+    logo: LogoMysql,
+    url: 'https://www.mysql.com/',
   },
-  {
-    label: 'Express.js',
-    logo: LogoExpress,
-    darkModeLogo: LogoExpressLight,
-    url: 'https://expressjs.com/',
-  },
-  {
-    label: 'Nest.js',
-    logo: LogoNest,
-    url: 'https://nestjs.com/',
-  },
-  {
-    label: 'Socket.io',
-    logo: LogoSocket,
-    darkModeLogo: LogoSocketLight,
-    url: 'https://socket.io/',
-  },
+  
   {
     label: 'PostgreSQL',
     logo: LogoPostgreSQL,
     url: 'https://www.postgresql.org/',
   },
-  {
-    label: 'MongoDB',
-    logo: LogoMongoDB,
-    url: 'https://www.mongodb.com/',
-  },
-  {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
-    label: 'Tailwindcss',
-    logo: LogoTailwindcss,
-    url: 'https://tailwindcss.com/',
-  },
+ 
   {
     label: 'Figma',
     logo: LogoFigma,
     url: 'https://www.figma.com/',
   },
-  {
-    label: 'Cypress',
-    logo: LogoCypress,
-    darkModeLogo: LogoCypressLight,
-    url: 'https://www.cypress.io/',
-  },
-  {
-    label: 'Storybook',
-    logo: LogoStorybook,
-    url: 'https://storybook.js.org/',
-  },
+  
   {
     label: 'Git',
     logo: LogoGit,
@@ -210,58 +206,61 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Wingie',
+    name: 'Tech Store',
     description:
-      'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
-    url: 'https://www.wingie.com',
-    previewImage: ProjectWingie,
+      'An e-commerce platform for web and mobile, allowing users to browse and purchase products easily, with an AI chatbot assistant to provide recommendations, answer questions, and enhance the shopping experience in just a few simple clicks.',
+    url: 'https://github.com/ZennadAkram/tech_store',
+    previewImage: ProjectTechstore,
     technologies: [
       'React',
       'Typescript',
-      'React Bootstrap',
-      'Firebase',
-      'Express.js',
+      'Tailwindcss',
+       'Context API',
+      'Flutter',
+      'Dart',
+      'Django Rest Framework',
+      'Deepseek API',
       'PostgreSQL',
-      'Styled Components',
-      'Redux',
+      'Websockets',
+     
     ],
   },
   {
-    name: 'Fiskil',
+    name: 'Character AI',
     description:
-      'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
-    url: 'https://fiskil.com.au',
-    previewImage: ProjectFiskil,
+      'A mobile app for chatting with AI-powered characters—fictional or custom—using text, STT, and TTS for immersive, interactive conversations.',
+    url: 'https://github.com/ZennadAkram/celebrity_ai',
+    previewImage:ProjectCharacterAI ,
     technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Material UI',
-      'Redux Toolkit',
-      'React Query',
-      'Express.js',
+      'Flutter',
+      'Dart',
+      'Riverpod',
+      'Django Rest Framework',
+      'Deepseek API',
+      'Smolagents',
+      
       'PostgreSQL',
-      'Firebase',
-      'AWS Amplify',
-      'Cypress',
-      'Storybook',
+      'Hive',
+      'TTS',
+      'STT',
+      'Websockets',
+      'Google Cloud',
     ],
   },
   {
-    name: 'Pepehousing',
+    name: 'A Learning',
     description:
-      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-    url: 'https://pepehousing.com',
-    previewImage: ProjectPepehousing,
+      'An e-learning platform for students, teachers, and admins to manage courses, submit and grade assignments, and organize users across the academic system.',
+    url: 'https://github.com/lokHamid/A-Learning',
+    previewImage: ProjectAlearning,
     technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Redux Toolkit',
-      'React Query',
-      'Storybook',
+      'Flutter',
+      'Dart',
+      'Provider',
+      'Spring Boot',
+      'Java',
+      'Supabase',
+      
     ],
   },
 ];
