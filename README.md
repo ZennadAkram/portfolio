@@ -19,7 +19,7 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/akram-zennad/portfolio.git
+$ git clone https://github.com/ZennadAkram/portfolio.git
 $ cd portfolio
 $ npm install
 $ npm run dev
