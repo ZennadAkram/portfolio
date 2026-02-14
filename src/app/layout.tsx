@@ -46,6 +46,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+   verification: {
+    google: '7v-YQrLf7eSPj1k7ef4fjsV42L7FMbxqRAEHtUxjrZY',
+  },
  /* twitter: {
     card: 'summary_large_image',
     title,
