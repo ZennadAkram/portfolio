@@ -76,10 +76,7 @@ export default function RootLayout({
         <head>
           
         {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="Me5HgE5oFWMoikFflOc33R56k8OGRuo11G6SiWPfBGU"
-        />
+       <meta name="google-site-verification" content="7v-YQrLf7eSPj1k7ef4fjsV42L7FMbxqRAEHtUxjrZY" />
           <Script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
